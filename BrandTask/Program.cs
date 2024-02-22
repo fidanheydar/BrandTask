@@ -6,10 +6,10 @@ string opt;
 
 do
 {
-    Console.WriteLine("1.Create Brand");
+    Console.WriteLine("1. Create Brand");
     Console.WriteLine("2. Delete Brand ");
     Console.WriteLine("3. Get Brand by Id");
-    Console.WriteLine("4.Get All Brands");
+    Console.WriteLine("4. Get All Brands");
     Console.WriteLine("5.Update Brand");
     Console.WriteLine("0. Exit");
     Console.Write("Choose Operation:");
@@ -62,7 +62,7 @@ do
                 Console.WriteLine(data);
             break;
             case "4":
-            Console.WriteLine("=All Bands==:");
+            Console.WriteLine("=All Brands==:");
             foreach (var item in brandService.GetAllBrands())
                 Console.WriteLine(item);
             break;
@@ -114,4 +114,4 @@ do
             break;
     }
 
-} while (true);
+} while (opt!="0");
